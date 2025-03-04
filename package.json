@@ -1,0 +1,31 @@
+{
+  "name": "mongodb-server",
+  "version": "0.1.1",
+  "description": "A Model Context Protocol server that provides read-only access to MongoDB databases through standardized MCP tools",
+  "author": {
+    "name": "Jonathan Freeland"
+  },
+  "license": "MIT", 
+  "private": true,
+  "type": "module",
+  "bin": {
+    "mongodb-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
