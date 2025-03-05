@@ -115,7 +115,7 @@ If configured correctly, you should see the following when you run `claude`:
 │                                                       │
 │   /help for help                                      │
 │                                                       │
-│   cwd: /Users/npahucki/Projects/ExecThread/admin-app  │
+│   cwd: <path-to-project-directory>                    │
 │                                                       │
 │   ─────────────────────────────────────────────────── │
 │                                                       │
