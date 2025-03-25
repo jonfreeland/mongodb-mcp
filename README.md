@@ -65,7 +65,7 @@ npm run watch
 
 To use with Claude Desktop, add the server configuration:
 
-On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`  
+On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
 ```json
