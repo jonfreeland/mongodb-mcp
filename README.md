@@ -2,6 +2,10 @@
 
 A Model Context Protocol server that provides read-only access to MongoDB databases through standardized MCP tools and resources.
 
+<a href="https://glama.ai/mcp/servers/cmywezu1sn">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/cmywezu1sn/badge" alt="MongoDB Server MCP server" />
+</a>
+
 ## Overview
 
 This MongoDB MCP server enables AI assistants to directly query and analyze MongoDB databases without write access, maintaining data safety while providing powerful data exploration capabilities.
