@@ -97,6 +97,38 @@ For Claude Web via the MCP Chrome extension, add configuration to Cline MCP sett
 }
 ```
 
+### Integration with Claude Code
+
+To use with Claude Code, use the following commands:
+
+```bash
+cd /path/to/my/project
+claude mcp add mongo-server /path/to/mongodb-mcp/build/index.js -e "MONGODB_URI=mongodb://user@password:27017/dbname?authSource=authDbName" -e MONGO_DEFAULT_DATABASE=dbname 
+```
+
+Make sure to replace the placeholders with your actual MongoDB connection string and default database name.
+
+If configured correctly, you should see the following when you run `claude`:
+```bash
+╭───────────────────────────────────────────────────────╮
+│ ✻ Welcome to Claude Code research preview!            │
+│                                                       │
+│   /help for help                                      │
+│                                                       │
+│   cwd: <path-to-project-directory>                    │
+│                                                       │
+│   ─────────────────────────────────────────────────── │
+│                                                       │
+│   MCP Servers:                                        │
+│                                                       │
+│   • mongo-server                            connected │
+╰───────────────────────────────────────────────────────╯
+
+```
+
+If you run into issues, see the Claude Code [documentation](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials#set-up-model-context-protocol-mcp-servers).
+
+
 ## Security Considerations
 
 - This server provides read-only access by design
