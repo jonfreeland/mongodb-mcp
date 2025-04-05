@@ -173,7 +173,7 @@ Error Handling:
       );
     }
 
-    const unsafeStages = ['$out', '$merge', '$addFields', '$set', '$unset', '$replaceRoot', '$replaceWith'];
+    const unsafeStages = ['$out', '$merge', '$set', '$unset', '$replaceRoot', '$replaceWith'];
     const unsafeStageFound = pipeline.find(stage => 
       Object.keys(stage).some(key => unsafeStages.includes(key))
     );
