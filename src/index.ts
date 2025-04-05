@@ -466,13 +466,14 @@ Supported Stages:
 - $group: Group documents by a key
 - $sort: Sort documents
 - $project: Shape the output
+- $addFields - Include additional or calculated fields
 - $lookup: Perform left outer joins
 - $unwind: Deconstruct array fields
+
 
 Unsafe/Blocked Stages:
 - $out: Write results to collection
 - $merge: Merge results into collection
-- $addFields: Add new fields
 - $set: Set field values
 - $unset: Remove fields
 - $replaceRoot: Replace document structure
